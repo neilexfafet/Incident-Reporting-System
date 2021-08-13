@@ -1,4 +1,4 @@
-# Incident-Reporting-System
+# Incident Reporting System
 
 <h3>Steps</h3>
 <h4>Run in terminal</h4>
