@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Officer;
+use App\Rank;
 
 class OfficerTablesSeeder extends Seeder
 {
@@ -16,7 +17,7 @@ class OfficerTablesSeeder extends Seeder
             'first_name'    => ' ',
             'middle_name'    => ' ',
             'last_name'    => 'DEVELOPER',
-            'rank'    => 'DEVELOPER',
+            'rank_id'    => Rank::all()->random()->id,
             'id_no' => 'DEVELOPER',
             'badge_no' => ' ',
             'email'    => 'developer@gmail.com',

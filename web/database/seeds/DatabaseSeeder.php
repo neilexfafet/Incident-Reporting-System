@@ -11,9 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Eloquent::unguard();
-        /* $this->call(AdminTablesSeeder::class);
-        $this->call(OfficerTablesSeeder::class); */
-        $this->call(RankTablesSeeder::class);
+        $this->call([
+            RankTablesSeeder::class,
+            AdminTablesSeeder::class,
+            OfficerTablesSeeder::class
+        ]);
     }
 }
