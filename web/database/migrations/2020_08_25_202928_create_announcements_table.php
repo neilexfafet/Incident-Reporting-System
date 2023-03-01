@@ -16,7 +16,7 @@ class CreateAnnouncementsTable extends Migration
         Schema::create('announcements', function (Blueprint $table) {
             $table->id();
             $table->string('subject')->default('TBD');
-            $table->string('message')->default('TBD);
+            $table->string('message')->default('TBD');
             $table->string('image')->default('TBD');
             $table->morphs('from');
             $table->tinyInteger('is_active')->default('1');
